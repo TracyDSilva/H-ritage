@@ -1,0 +1,5 @@
+U:\Slam4\Exo1Hypothese1\Exo3\bin\Debug\Exo3.exe
+U:\Slam4\Exo1Hypothese1\Exo3\bin\Debug\Exo3.pdb
+U:\Slam4\Exo1Hypothese1\Exo3\obj\x86\Debug\ResolveAssemblyReference.cache
+U:\Slam4\Exo1Hypothese1\Exo3\obj\x86\Debug\Exo3.exe
+U:\Slam4\Exo1Hypothese1\Exo3\obj\x86\Debug\Exo3.pdb

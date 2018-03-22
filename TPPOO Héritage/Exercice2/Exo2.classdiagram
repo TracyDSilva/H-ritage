@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<logicalClassDesignerModel xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" dslVersion="1.0.0.0" Id="ee6b7be9-4cda-4734-b0fa-d15c6fb72f94" name="Exo2" linkedPackageId="74193973-3d71-4429-894c-dc77ebd72607" xmlns="http://schemas.microsoft.com/dsltools/LogicalClassDesigner">
+  <profileInstances>
+    <packageHasProfileInstances Id="80bcdec5-e80c-46f5-b826-3bc606b916de">
+      <profileInstance Id="e1d2dd28-5460-441b-8282-f53d524cd1a9" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="c091d4eb-577b-42ad-bb06-fd7c8dd9f55b">
+      <profileInstance Id="2d6d8efe-8e71-4e1c-9f9e-49263221f538" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="32017ebd-afd6-4f3f-996f-6bca32c90707" name="Appareil électroménager" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="2af67df3-3766-420f-9cc8-780094f20207" />
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="7342cc51-fc8a-43ce-a1eb-3404f346ae81" name="Appareil à cuisiner" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ceb2b81a-f128-41a3-9872-53600998afc0" />
+        <suppliersInternal>
+          <dependency Id="da6bf3e2-a8b1-4f8b-9610-2fce0602eda9">
+            <classMoniker Id="32017ebd-afd6-4f3f-996f-6bca32c90707" LastKnownName="Appareil électroménager" />
+            <elementDefinition Id="b9c0d5b6-b3f1-4e65-94e6-0b591452c43c" />
+          </dependency>
+        </suppliersInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="ddecf422-0974-4c78-b3b6-df22077363a3" name="Appareil à nettoyer" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="ec48baa6-d836-4b72-af29-70682ffc99fc" />
+        <generalsInternal>
+          <generalization Id="babcd703-5eef-45eb-b515-0926732f9ed4" isSubstitutable="false">
+            <classMoniker Id="32017ebd-afd6-4f3f-996f-6bca32c90707" LastKnownName="Appareil électroménager" />
+            <elementDefinition Id="6e60335e-2128-4087-bab6-48d07ba4b77d" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="6487eae0-9bac-465c-9c86-b561930e2a6a" name="Ramasse miettes" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0367d096-c5c7-4a31-8df5-2a2da441bca4" />
+        <generalsInternal>
+          <generalization Id="ad9badcf-9fa6-4499-9687-4fb563c81aa5" isSubstitutable="false">
+            <classMoniker Id="ddecf422-0974-4c78-b3b6-df22077363a3" LastKnownName="Appareil à nettoyer" />
+            <elementDefinition Id="8cc719bc-ed3c-4136-9a20-3e9d2732afa8" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="d819a862-c444-4bcf-839f-397cead9b7b1" name="Lave-vaisselle" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="b57c91c5-b060-4d93-bd9d-9030192ea313" />
+        <generalsInternal>
+          <generalization Id="f96a6c10-0c2e-41fa-8870-5f812f09484a" isSubstitutable="false">
+            <classMoniker Id="ddecf422-0974-4c78-b3b6-df22077363a3" LastKnownName="Appareil à nettoyer" />
+            <elementDefinition Id="610042fc-c25d-4ac0-9cb3-fd140067d6c0" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="5cb91651-d649-468e-8f20-2b9e6b799d9f" name="Micro-ondes" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="197f1a85-8076-4334-9756-58709c445b4a" />
+        <generalsInternal>
+          <generalization Id="35ebdbbd-e6d2-495f-9343-28e247037b4e" isSubstitutable="false">
+            <classMoniker Id="7342cc51-fc8a-43ce-a1eb-3404f346ae81" LastKnownName="Appareil à cuisiner" />
+            <elementDefinition Id="f42f20c6-1d52-4d23-9cb2-ba4a72864e15" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+    <logicalClassDesignerModelHasTypes>
+      <class Id="dd8fb204-9ff1-492a-be0e-11536346db9a" name="Four" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="4a149fae-3707-4eba-83fd-3eb223e6ae38" />
+        <generalsInternal>
+          <generalization Id="aded6c23-6547-4945-9f11-31f200a36e25" isSubstitutable="false">
+            <classMoniker Id="7342cc51-fc8a-43ce-a1eb-3404f346ae81" LastKnownName="Appareil à cuisiner" />
+            <elementDefinition Id="aada19c7-780e-484d-bb0b-72798af73a2c" />
+          </generalization>
+        </generalsInternal>
+      </class>
+    </logicalClassDesignerModelHasTypes>
+  </packagedElements>
+  <package Id="74193973-3d71-4429-894c-dc77ebd72607" name="Exercice2">
+    <elementDefinition Id="561ca5f2-e4a7-4a21-8384-28ea4dd8441c" />
+  </package>
+</logicalClassDesignerModel>
